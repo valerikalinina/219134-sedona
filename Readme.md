@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Валерия Калинина](https://up.htmlacademy.ru/adaptive/11/user/219134).
-* Наставник: `Неизвестно`.
+* Наставник: `keksik`.
 
 ---
 
