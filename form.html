@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Sedona</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="css/normalizecss" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <div>
+        <ul class="page-header__items">
+          <li class="page-header__item ferst-item"><a href="#">Главная</a><span class="close"></span></li>
+          <li class="page-header__item"><a class="" class="gallery.html">Фото и видео</a></li>
+          <li class="page-header__item"><a href="form.html">Форма отзыва</a></li>
+          <li class="page-header__item"><a href="http://htmlacademy.ru">Html academy</a></li>
+        </ul>
+        <div class="page-header__logo">
+          <img src="" alt="City of Sedona"/>
+        </div>
+        <span class="open"></span>
+      </div>
+    </header>
+    <main>
+      <div class="section">
+        <h2 class="section__title"></h2>
+        <p class="section__description"></p>
+      </div>
+      <form class="feedback-form">
+        <div class="feedback-form__container">
+          <div class="feedback-form__fieldset">
+            <div class="feedback-form__legend">Представьтесь:</div>
+            <div class="feedback-form__items">
+              <div class="feedback-form__item">
+                <label class="feedback-form__label" for="user-data_1">Имя:</label>
+                <div class="feedback-form__fields">
+                  <input class="field field--text" type="text" name="user-name" placeholder="Введите ваше имя*" id="user-data_1">
+                </div>
+              </div>
+              <div class="feedback-form__item">
+                <label class="feedback-form__label" for="user-data_2">Фамилия:</label>
+                <div class="feedback-form__fields">
+                  <input class="field field--text" type="text" name="user-name" placeholder="Укажите фамилию*" id="user-data_2">
+                </div>
+              </div>
+              <div class="feedback-form__item">
+                <label class="feedback-form__label" for="user-data_3">Отчество:</label>
+                <div class="feedback-form__fields">
+                  <input class="field field--text" type="text" name="user-name" placeholder="Отчество, если желаете*" id="user-data_3">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-form__container">
+          <div class="feedback-form__fieldset">
+            <div class="feedback-form__legend">Контактная информация:</div>
+            <div class="feedback-form__items">
+              <div class="feedback-form__item">
+                <div class="feedback-form__legend">Контактный телефон*:</div>
+                <input class="field field--text" type="number" name="user-name" placeholder="Введите телефон" id="user-telephone">
+                <span class="icon__square"><svg class="icon__phone"></svg></span>
+              </div>
+            </div>
+            <div class="feedback-form__legend">Электронная почта*:</div>
+              <div class="feedback-form__item">
+                <input class="field field--text" type="email" name="user-name" placeholder="Введите e-mail" id="user-mail">
+                <span class="icon__square"><svg class="icon__mail"></svg></span>
+              </div>
+            </div>
+        </div>
+        <div class="feedback-form__container">
+          <div class="feedback-form__fieldset">
+            <div class="feedback-form__legend">Ваше общее впечатление:</div>
+            <div class="feedback-form__items">
+              <div class="feedback-form__item">
+                <label class="radio-button">
+                  <input class="radio-button__input" type="radio" name="type" value="positive"/>
+                  <span class="radio-button__text">Скорее положительное</span>
+                </label>
+              </div>
+              <div class="feedback-form__item">
+                <label class="radio-button">
+                  <input class="radio-button__input" type="radio" name="type" value="negative"/>
+                  <span class="radio-button__text">Скорее отрицательное</span>
+                </label>
+              </div>
+              <div class="feedback-form__item">
+                <label class="radio-button">
+                  <input class="radio-button__input" type="radio" name="type" value="difficult to answer"/>
+                  <span class="radio-button__text">Затрудняюсь ответить</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-form__container">
+          <div class="feedback-form__fieldset">
+            <div class="feedback-form__legend">Посещенные достопримечательности:</div>
+            <div class="feedback-form__items-checkbox">
+              <div class="feedback-form__item-checkbox">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="color" value="bridge">
+                  <span class="checkbox__text">Мост Дьявола</span>
+                </label>
+              </div>
+              <div class="order-form__item-checkbox">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="color" value="park">
+                  <span class="checkbox__text">Слайд-парк</span>
+                </label>
+              </div>
+              <div class="order-form__item-checkbox">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="color" value="mountain">
+                  <span class="checkbox__text">Гора-Колокол</span>
+                </label>
+              </div>
+              <div class="feedback-form__item-checkbox">
+                <label class="checkbox">
+                  <input class="checkbox__input" type="checkbox" name="color" value="rocks">
+                  <span class="checkbox__text">Красные скалы</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feedback-form__container">
+          <div class="feedback-form__fieldset">
+            <div class="feedback-form__legend">Опишите свои эмоции:</div>
+            <div class="feedback-form__items">
+              <textarea class="field field--area" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn__form" type="submit"></button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <span class="page-footer__teg">#Visitsedona</span>
+      <div class="page-footer__social">
+        <div class="page-footer__social-icon">
+          <a href="#"><svg></svg></a>
+        </div>
+        <div class="page-footer__social-icon">
+          <a href="#"><svg></svg></a>
+        </div>
+        <div class="page-footer__social-icon">
+          <a href="#"><svg></svg></a>
+        </div>
+      </div>
+      <div class="developer">
+        <span class="developer__text">Разработано</span>
+        <a class="developer__icon" href="http://htmlacademy.ru"><svg></svg></a>
+      </div>
+    </footer>
+  </body>
+</html>
