@@ -1,0 +1,15 @@
+.developer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+  .developer__text {
+    font-size: 14px;
+    line-height: 26px;
+    margin-right: 12px;
+    text-transform: uppercase;
+  }
+
+}

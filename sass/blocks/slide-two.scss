@@ -1,0 +1,85 @@
+.slide-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  color: white;
+  height: auto;
+  background-color: rgb(129, 179, 210);
+
+.slide-two__describtion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 266px;
+  max-width: 266px;
+  margin: 0 auto;
+}
+
+.slide-two__describtion::before {
+  position: absolute;
+  top: -10px;
+  left: -27px;
+  content: '';
+  width: 320px;
+  height: 36px;
+  z-index: 3;
+  background-image: url('../img/bg-triangle.svg');
+  background-position: center;
+}
+
+.slide-two__title {
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 600;
+  width: 266px;
+  max-width: 260px;
+  margin-top: 56px;
+  text-transform: uppercase;
+}
+
+.slide-two__number {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  width: 260px;
+  max-width: 266px;
+  text-transform: uppercase;
+}
+
+.slide-two__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 300;
+  width: 266px;
+  max-width: 260px;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+}
+
+.slide-two__image {
+  position: relative;
+  width: auto;
+  height: 260px;
+  z-index: 2;
+}
+
+.slide-two__image:after {
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: -160px;
+  width: 320px;
+  height: 260px;
+  background-image: url('../img/photo-bridge-mobile@1x.jpg');
+  background-position: center;
+}
+
+}

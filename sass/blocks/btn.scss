@@ -1,0 +1,28 @@
+.btn {
+  padding: 17px 48px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: 'PT sans';
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgba(129, 179, 210, 1);
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: #94b9d2;
+  }
+}
+
+.btn__reservation {
+  margin-bottom: 49px;
+}
+
+.btn__form {
+  width: 100%;
+}

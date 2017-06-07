@@ -1,0 +1,86 @@
+.feedback-form {
+
+  .feedback-form__fieldset {
+  width: auto;
+  border-top: 1px solid #e5e5e5;
+  }
+
+  .feedback-form__container {
+  padding: 17px 6.6%;
+  }
+
+  .feedback-form__legend {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    width: auto;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .feedback-form__items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback-form__items-two {
+  flex-direction: column;
+  width: 280px;
+  }
+
+  .feedback-form__item {
+    display: flex;
+    flex-direction: row;
+    max-width: 280px;
+  }
+
+  .feedback-form__label {
+    justify-content: center;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-right: 16px;
+    margin-top: 17px;
+    margin-bottom: 10px;
+  }
+
+  .feedback-form__items--two .feedback-form__legend {
+    margin-top: 2px;
+  }
+
+  .feedback-form__items--two .feedback-form__label {
+    margin-left: 20px;
+    margin-bottom: 8px;
+  }
+
+  .feedback-form__fields {
+    width: auto;
+    margin-bottom: 22px;
+  }
+
+  .feedback-form__items--two .feedback-form__fields {
+    margin-bottom: 10px;
+  }
+
+  .feedback-form__fields--last {
+    margin-bottom: 8px;
+  }
+
+  .feedback-form__square {
+    display: flex;
+    min-width: 58px;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+  }
+
+  .feedback-form__icon {
+    margin: auto;
+  }
+
+button {
+    border: none;
+    outline: none;
+  }
+}

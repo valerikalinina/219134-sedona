@@ -1,0 +1,45 @@
+.media {
+  position: absolute;
+  top: 156px;
+  left: 20px;
+  width: 280px;
+  height: 45px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .media__line {
+    position: relative;
+    margin: 22px;
+    width: 235px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .media__toggle {
+    position: absolute;
+    top: -3px;
+    left: 36px;
+    width: 9px;
+    height: 9px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.media___media-pleyer {
+  position: absolute;
+  top: 201px;
+  left: 20px;
+  width: 280px;
+  height: 66px;
+  background-color: #f2f2f2;
+}
+
+.media__replay {
+  fill: #5c6870;
+  margin: 22px 133px 0px 17px;
+}
+
+.media__subtitles {
+  margin-right: 31px;
+}
