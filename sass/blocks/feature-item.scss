@@ -1,0 +1,35 @@
+.feature-item {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  .feature-item__icon {
+      position: absolute;
+      top: 0px;
+      align-items: center;
+      justify-content: center;
+    }
+
+  .feature-item__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 52px;
+  }
+
+  .feature-item__title {
+    text-align: left;
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .feature-item__describtion {
+    text-align: left;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+}

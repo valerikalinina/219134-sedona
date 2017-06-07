@@ -1,0 +1,23 @@
+.field {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  padding: 22px;
+  width: 100%;
+  max-height: 58px;
+}
+
+.field--area {
+  min-height: 116px;
+}
+
+.field--name {
+  width: 100%;
+}
+/*
+input[placeholder=""] {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+} */

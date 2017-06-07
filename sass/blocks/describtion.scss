@@ -1,0 +1,41 @@
+.describtion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 258px;
+  width: 258px;
+  height: 225px;
+  margin: 0 auto;
+
+  .describtion__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    margin-top: 43px;
+    text-transform: uppercase;
+  }
+
+  .describtion__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 300;
+    margin-bottom: 33px;
+    text-transform: uppercase;
+  }
+}
+
+.describtion::after {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  content: '';
+  width: 100%;
+  height: 19px;
+  background-image: url('../img/bg-intro-triangle-mobile.svg');
+  background-position: center;
+  background-size: contain;
+}

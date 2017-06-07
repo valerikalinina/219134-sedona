@@ -1,0 +1,36 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  max-width: 240px;
+  margin: 0 auto;
+
+  .video__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    width: 240px;
+    max-width: 240px;
+    margin-top: 56px;
+    text-transform: uppercase;
+  }
+
+  .video__describtion {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    width: 240px;
+    max-width: 240px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+   }
+
+   .video__container {
+     position: relative;
+     margin-bottom: 105px;
+   }
+}

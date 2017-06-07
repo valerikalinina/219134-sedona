@@ -1,0 +1,40 @@
+.icon__home {
+  width: 37px;
+  height: 37px;
+  fill: #81b3d2;
+}
+
+.icon__souvenirs {
+  width: 32px;
+  height: 38px;
+  fill: #81b3d2;
+}
+
+.icon__food {
+  width: 40px;
+  height: 35px;
+  fill: #81b3d2;
+}
+
+.icon__fb {
+  fill: #fff;
+}
+
+.icon__tw {
+  fill: #fff;
+}
+
+.icon__ytb {
+  fill: #fff;
+}
+
+.icon__developer {
+  fill: #000;
+
+  &:hover {
+    fill: #81b3d2;
+  }
+  &:active {
+    fill: #b2b2b2;
+  }
+}

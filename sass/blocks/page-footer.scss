@@ -1,0 +1,17 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 0 auto 22px;
+
+  .page-footer__teg {
+    margin: 41px 0;
+    color: black;
+    text-transform: uppercase;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 600;
+  }
+}
