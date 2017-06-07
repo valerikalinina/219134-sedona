@@ -13,11 +13,11 @@
       <header class="page-header">
           <nav class="main-nav main-nav--open-js">
             <ul class="main-nav__items">
-              <li class="main-nav__item ferst-item"><a class="first-link" href="#">Главная</a>
+              <li class="main-nav__item ferst-item"><a class="first-link" href="index.html">Главная</a>
               <button class="button-close" type="submit"><span class="main-nav__close"></span></button>
             </li>
               <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
-              <li class="main-nav__item"><a href="form.html">Форма отзыва</a></li>
+              <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
               <li class="main-nav__item"><a class="last-link" href="http://htmlacademy.ru">Html academy</a></li>
             </ul>
             </nav>
@@ -216,7 +216,7 @@
               </div>
               <div class="feedback-form__item">
                 <label class="feedback-form__label" for="user-data_2">Фамилия:</label>
-                <div class="feedback-form__fields">
+                <div class="feedback-form__fields--two">
                   <input class="field field--text" type="text" name="user-name" placeholder="Иванов" id="user-data_2">
                 </div>
               </div>
@@ -233,9 +233,11 @@
           <div class="feedback-form__container">
             <div class="feedback-form__legend">Контактная информация:</div>
             <div class="feedback-form__items--two">
-                <div class="feedback-form__label">Контактный телефон*:</div>
+                <div class="feedback-form__label feedback-form__label--mob">Контактный телефон*:</div>
                 <div class="feedback-form__item">
-                  <input class="field field--text" type="number" name="user-name" placeholder="Введите телефон" id="user-telephone">
+                  <div class="feedback-form__fields">
+                  <input class="field field--number" type="number" name="user-name" placeholder="Введите телефон" id="user-telephone">
+                </div>
                 <div class="feedback-form__square">
                   <div class="feedback-form__icon">
                   <svg class="icon__phone" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" enable-background="new 0 0 18 18" xml:space="preserve">
@@ -250,9 +252,11 @@
                 </div>
                 </div>
               </div>
-            <div class="feedback-form__label">Электронная почта*:</div>
+            <div class="feedback-form__label--email">Электронная почта*:</div>
               <div class="feedback-form__item">
-                <input class="field field--text" type="email" name="user-name" placeholder="Введите e-mail" id="user-mail">
+                <div class="feedback-form__fields">
+                <input class="field field--email" type="email" name="user-name" placeholder="Введите e-mail" id="user-mail">
+              </div>
                 <div class="feedback-form__square">
                   <div class="feedback-form__icon">
                     <svg class="icon__mail" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
@@ -267,10 +271,10 @@
         <div class="feedback-form__fieldset">
           <div class="feedback-form__container">
             <div class="feedback-form__legend">Ваше общее впечатление:</div>
-            <div class="feedback-form__items">
+            <div class="feedback-form__items feedback-form__items--radio">
               <div class="feedback-form__item">
                 <label class="radio-button">
-                  <input class="radio-button__input" type="radio" name="type" value="positive"/>
+                  <input class="radio-button__input" type="radio" name="type" value="positive" checked/>
                   <span class="radio-button__text">Скорее положительное</span>
                 </label>
               </div>
@@ -281,7 +285,7 @@
                 </label>
               </div>
               <div class="feedback-form__item">
-                <label class="radio-button">
+                <label class="radio-button radio-button--last">
                   <input class="radio-button__input" type="radio" name="type" value="difficult to answer"/>
                   <span class="radio-button__text">Затрудняюсь ответить</span>
                 </label>
@@ -292,28 +296,28 @@
         <div class="feedback-form__fieldset">
           <div class="feedback-form__container">
             <div class="feedback-form__legend">Посещенные достопримечательности:</div>
-            <div class="feedback-form__items-checkbox">
-              <div class="feedback-form__item-checkbox">
+            <div class="feedback-form__items feedback-form__items--checkbox">
+              <div class="feedback-form__item">
                 <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="color" value="bridge">
+                  <input class="checkbox__input" type="checkbox" name="color" value="bridge" checked>
                   <span class="checkbox__text">Мост Дьявола</span>
                 </label>
               </div>
-              <div class="feedback-form__item-checkbox">
+              <div class="feedback-form__item">
                 <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="color" value="park">
+                  <input class="checkbox__input" type="checkbox" name="color" value="park" checked>
                   <span class="checkbox__text">Слайд-парк</span>
                 </label>
               </div>
-              <div class="feedback-form__item-checkbox">
+              <div class="feedback-form__item">
                 <label class="checkbox">
                   <input class="checkbox__input" type="checkbox" name="color" value="mountain">
                   <span class="checkbox__text">Гора-Колокол</span>
                 </label>
               </div>
-              <div class="feedback-form__item-checkbox">
-                <label class="checkbox">
-                  <input class="checkbox__input" type="checkbox" name="color" value="rocks">
+              <div class="feedback-form__item">
+                <label class="checkbox checkbox--last">
+                  <input class="checkbox__input" type="checkbox" name="color" value="rocks" checked>
                   <span class="checkbox__text">Красные скалы</span>
                 </label>
               </div>
@@ -322,9 +326,9 @@
         </div>
         <div class="feedback-form__fieldset">
           <div class="feedback-form__container">
-            <div class="feedback-form__legend">Опишите свои эмоции:</div>
+            <div class="feedback-form__legend--area">Опишите свои эмоции:</div>
             <div class="feedback-form__items">
-              <textarea class="field field--area" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+              <textarea class="field--area" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </div>
         </div>
@@ -332,7 +336,7 @@
       </form>
     </main>
     <footer class="page-footer">
-      <span class="page-footer__teg">#Visitsedona</span>
+      <span class="page-footer__teg--form">#Visitsedona</span>
       <div class="social">
         <div class="social-icon">
           <a href="#">
