@@ -13,5 +13,15 @@
     font-size: 21px;
     line-height: 26px;
     font-weight: 600;
+
+    &--form {
+      margin: 41px 0;
+      color: black;
+      text-transform: uppercase;
+      font-size: 21px;
+      line-height: 26px;
+      font-weight: 600;
+      margin-bottom: 34px;
+    }
   }
 }
