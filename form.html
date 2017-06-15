@@ -17,7 +17,7 @@
               <button class="button-close" type="submit"><span class="main-nav__close"></span></button>
             </li>
               <li class="main-nav__item"><a href="photo.html">Фото и видео</a></li>
-              <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
+              <li class="main-nav__item"><a class="main-nav__active-link" href="#">Форма отзыва</a></li>
               <li class="main-nav__item"><a class="last-link" href="http://htmlacademy.ru">Html academy</a></li>
             </ul>
             </nav>
@@ -199,15 +199,19 @@
       </header>
     <main>
       <div class="section section--form">
-        <h2 class="section__title">Оставьте свой отзыв</h2>
-        <p class="section__form">Помогите нашим отелям стать лучше!</p>
-        <p class="section__two-text">Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <h2 class="section__title--form">Оставьте свой отзыв</h2>
+        <div class="section__mobile">
+          <p class="section__form">Помогите нашим отелям стать лучше!</p>
+          <p class="section__two-text">Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+        <p class="section__describtion section__describtion--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
       <form class="feedback-form">
-        <div class="feedback-form__fieldset">
+        <div class="feedback-form__group">
+        <div class="feedback-form__fieldset feedback-form__fieldset--second-child">
           <div class="feedback-form__container">
             <div class="feedback-form__legend">Представьтесь:</div>
-            <div class="feedback-form__items">
+            <div class="feedback-form__items feedback-form__items--information">
               <div class="feedback-form__item">
                 <label class="feedback-form__label" for="user-data_1">Имя:</label>
                 <div class="feedback-form__fields">
@@ -229,14 +233,15 @@
             </div>
           </div>
         </div>
-        <div class="feedback-form__fieldset">
+        <div class="feedback-form__fieldset feedback-form__fieldset--third-child">
           <div class="feedback-form__container">
-            <div class="feedback-form__legend">Контактная информация:</div>
+            <div class="feedback-form__legend feedback-form__legend--tablet">Контактная информация:</div>
             <div class="feedback-form__items--two">
                 <div class="feedback-form__label feedback-form__label--mob">Контактный телефон*:</div>
-                <div class="feedback-form__item">
+                <div class="feedback-form__label feedback-form__label--desktop">Телефон*:</div>
+                <div class="feedback-form__item feedback-form__item--tel">
                   <div class="feedback-form__fields">
-                  <input class="field field--number" type="number" name="user-name" placeholder="Введите телефон" id="user-telephone">
+                  <input class="field--number" type="number" name="user-name" placeholder="Введите телефон" id="user-telephone">
                 </div>
                 <div class="feedback-form__square">
                   <div class="feedback-form__icon">
@@ -255,7 +260,7 @@
             <div class="feedback-form__label--email">Электронная почта*:</div>
               <div class="feedback-form__item">
                 <div class="feedback-form__fields">
-                <input class="field field--email" type="email" name="user-name" placeholder="Введите e-mail" id="user-mail">
+                <input class="field--email" type="email" name="user-name" placeholder="Введите e-mail" id="user-mail">
               </div>
                 <div class="feedback-form__square">
                   <div class="feedback-form__icon">
@@ -268,7 +273,7 @@
             </div>
             </div>
         </div>
-        <div class="feedback-form__fieldset">
+        <div class="feedback-form__fieldset feedback-form__fieldset--first-child">
           <div class="feedback-form__container">
             <div class="feedback-form__legend">Ваше общее впечатление:</div>
             <div class="feedback-form__items feedback-form__items--radio">
@@ -293,9 +298,10 @@
             </div>
           </div>
         </div>
-        <div class="feedback-form__fieldset">
+        </div>
+        <div class="feedback-form__fieldset feedback-form__fieldset--four-child">
           <div class="feedback-form__container">
-            <div class="feedback-form__legend">Посещенные достопримечательности:</div>
+            <div class="feedback-form__legend feedback-form__legend--checkbox">Посещенные достопримечательности:</div>
             <div class="feedback-form__items feedback-form__items--checkbox">
               <div class="feedback-form__item">
                 <label class="checkbox">
@@ -309,13 +315,13 @@
                   <span class="checkbox__text">Слайд-парк</span>
                 </label>
               </div>
-              <div class="feedback-form__item">
+              <div class="feedback-form__item feedback-form__item--tablet-check">
                 <label class="checkbox">
                   <input class="checkbox__input" type="checkbox" name="color" value="mountain">
                   <span class="checkbox__text">Гора-Колокол</span>
                 </label>
               </div>
-              <div class="feedback-form__item">
+              <div class="feedback-form__item feedback-form__item--tablet-check">
                 <label class="checkbox checkbox--last">
                   <input class="checkbox__input" type="checkbox" name="color" value="rocks" checked>
                   <span class="checkbox__text">Красные скалы</span>
@@ -324,7 +330,7 @@
             </div>
           </div>
         </div>
-        <div class="feedback-form__fieldset">
+        <div class="feedback-form__fieldset feedback-form__fieldset--last-child">
           <div class="feedback-form__container">
             <div class="feedback-form__legend--area">Опишите свои эмоции:</div>
             <div class="feedback-form__items">
@@ -337,7 +343,7 @@
     </main>
     <footer class="page-footer">
       <span class="page-footer__teg--form">#Visitsedona</span>
-      <div class="social">
+      <div class="social social--form">
         <div class="social-icon">
           <a href="#">
             <svg class="social-icon--center icon__tw" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">

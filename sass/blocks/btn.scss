@@ -29,3 +29,44 @@
   max-height: 58px;
   margin: 0 20px;
 }
+
+@media screen and (min-width: 768px) {
+  .btn__reservation {
+    padding: 16px 135px;
+    margin-bottom: 59px;
+  }
+
+  .btn__form {
+    position: relative;
+    width: 324px;
+    padding: 16px 76px 18px 60px;
+    margin: 0px 0px 32px 0px;
+  }
+
+  .btn__form::after {
+    position: absolute;
+    top: 19px;
+    right: -325px;
+    content: '* - Обязательные поля';
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .btn__reservation {
+    margin-bottom: 65px;
+  }
+
+  .btn__form {
+    width: 480px;
+    padding: 16px 146px 18px;
+  }
+
+  .btn__form::after {
+    right: -480px;
+  }
+}

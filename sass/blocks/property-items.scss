@@ -9,3 +9,9 @@
   height: auto;
   background-color: #eee;
 }
+
+@media screen and (min-width: 768px) {
+  .property-items {
+    flex-direction: row;
+  }
+}

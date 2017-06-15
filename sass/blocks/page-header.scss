@@ -63,11 +63,12 @@
     content: '';
     bottom: 1px;
     left: 0px;
-    width: 100%;
+    width: 320px;
     height: 19px;
     z-index: 3;
     background-image: url('../img/bg-intro-triangle-mobile.svg');
     background-position: center;
+    background-repeat: no-repeat;
   }
 
   .page-header__welcome-title {
@@ -80,4 +81,72 @@
     margin: 30px 45px 0;
   }
 
+}
+@media screen and (min-width: 768px) {
+  .page-header {
+    width: 768px;
+
+    .page-header__logo {
+      left: 43.5%
+    }
+
+    .page-header__open {
+      display: none;
+    }
+
+     .page-header__image {
+       width: 768px;
+       height: 518px;
+     }
+
+
+    .page-header__image--mob {
+      height: 291px;
+    }
+
+    .page-header__border-bottom::after {
+      height: 59px;
+      background-repeat: no-repeat;
+
+    }
+
+    .page-header__welcome-title {
+      width: 60%;
+      margin-top: 77px;
+      margin-left: 153px;
+    }
+
+    .page-header__sedona {
+      margin: 95px 0px 0px 119px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-header {
+    width: 1200px;
+
+    .page-header__logo {
+      left: 45.6%
+    }
+
+     .page-header__image {
+       width: 1200px;
+       height: 518px;
+     }
+
+     .page-header__welcome-title {
+       width: 60%;
+       margin-top: 77px;
+       margin-left: 240px;
+     }
+
+     .page-header__image--mob {
+       height: 300px;
+     }
+     .page-header__sedona {
+       width: 70%;
+       margin: 100px 180px 0;
+     }
+  }
 }

@@ -2,30 +2,99 @@
   background-color: #f2f2f2;
   border: none;
   outline: none;
-  padding: 22.5px 22px;
-  width: 100%;
+  padding: 16px 22px;
+  width: 79%;
   max-height: 58px;
+
+  &--area {
+    max-width: 280px;
+    min-height: 116px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    padding: 16px 20px 28px;
+    margin-bottom: 34px;
+  }
+
+  &--name {
+    width: 82%;
+  }
+
+  &--number {
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    padding: 16px 22px;
+    width: 84%;
+    max-height: 58px;
+  }
+
+  &--email {
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    padding: 16px 22px;
+    width: 84%;
+    max-height: 58px;
+    margin-bottom: 2px;
+  }
 }
 
-.field--area {
-  max-width: 280px;
-  min-height: 116px;
-  background-color: #f2f2f2;
-  border: none;
-  outline: none;
-  padding: 22.5px 22px;
-  margin-bottom: 34px;
-}
-
-.field--name {
-  width: 100%;
-}
-
-
-/*
-input[placeholder=""] {
-  color: black;
-  font-weight: 600;
+input[placeholder='Петр'],
+input[placeholder='Иванов'],
+input[placeholder='Александрович'],
+input[placeholder='Введите телефон'],
+input[placeholder='Введите e-mail'],
+textarea[placeholder='Опишите подробно все свои восторги'] {
+  color: #000;
   font-size: 18px;
   line-height: 26px;
-} */
+  font-weight: 600;
+  font-family: 'TP sans';
+}
+
+@media screen and (min-width: 768px) {
+ .field {
+   width: 137px;
+   &--area {
+     width: 604px;
+     max-width: 604px;
+     margin-bottom: 58px;
+   }
+
+   &--number {
+     width: 546px;
+   }
+
+   &--email {
+     width: 546px;
+   }
+
+     &--name {
+       width: 175px;
+     }
+ }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .field {
+    width: 268px;
+    margin-left: 2px;
+    &--area {
+      min-width: 920px;
+    }
+
+    &--number {
+      width: 214px;
+    }
+
+    &--name {
+      width: 306px;
+    }
+
+    &--email {
+      width: 214px;
+    }
+  }
+}

@@ -4,7 +4,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 258px;
   width: 258px;
   height: 225px;
   margin: 0 auto;
@@ -38,4 +37,37 @@
   background-image: url('../img/bg-intro-triangle-mobile.svg');
   background-position: center;
   background-size: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .describtion {
+    width: auto;
+    max-width: auto;
+    height: auto;
+
+    .describtion__title {
+      width: 444px;
+      max-width: 444px;
+      font-size: 21px;
+      width: 445px;
+      max-width: 445px;
+      margin-top: 50px;
+    }
+
+    .describtion__text {
+      width: 490px;
+      max-width: 490px;
+      margin-top: 12px;
+      margin-bottom: 49px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .describtion {
+    background-color: white;
+    .describtion__text::after {
+        display: none;
+      }
+  }
 }
