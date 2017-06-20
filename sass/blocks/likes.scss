@@ -1,7 +1,25 @@
 .likes {
-  margin-top: 6px;
+  margin-top: 5px;
 
   .likes__number {
+    font-size: 14px;
+    line-height: 24px;
     margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 648px) {
+  .likes {
+    position: absolute;
+    top: 22px;
+    right: 31px;
+
+    &--first {
+      right: 18px;
+    }
+
+    .likes__number {
+      margin-left: 10px;
+    }
   }
 }

@@ -35,3 +35,51 @@
      margin-bottom: 95px;
    }
 }
+
+@media screen and (min-width: 648px) {
+  .video {
+    width: auto;
+    max-width: auto;
+    .video__title {
+      font-size: 30px;
+      max-width: 354px;
+      width: 354px;
+      margin-top: 60px;
+      margin-bottom: 22px;
+    }
+
+    .video__describtion {
+      width: 416px;
+      max-width: 416px;
+      margin-bottom: 73px;
+    }
+
+    .video__image {
+      width: 648px;
+      height: 500px;
+    }
+
+    .video__container {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .video {
+    .video__title {
+      margin-top: -15px;
+      margin-bottom: 20px;
+    }
+
+    .video__image {
+      width: 800px;
+      min-width: 800px;
+      height: 500px;
+    }
+
+    .video__container {
+      margin-bottom: 75px;
+    }
+  }
+}

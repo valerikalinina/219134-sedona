@@ -55,3 +55,17 @@
     opacity: 0.3;
   }
 }
+
+@media screen and (min-width: 648px) {
+  .radio-button {
+    padding-bottom: 53px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .radio-button {
+    .radio-button__text {
+      margin-left: 82px;
+    }
+  }
+}
