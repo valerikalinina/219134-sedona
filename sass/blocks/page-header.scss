@@ -59,6 +59,7 @@
 
   .page-header__image {
    z-index: 1;
+   width: 320px;
    height: 390px;
    background-position: center;
    background-repeat: no-repeat;
@@ -69,11 +70,9 @@
 
   @media (min-resolution: 144dpi),
          (min-resolution: 1.5dppx) {
-    .page-header__image {
      background-image: url('../img/bg-back-mobile@2x.jpg');
-     background-size: 640px 390px;
+     background-size: 320px auto;
     }
-  }
 
   .page-header__image--mob {
    z-index: 1;
@@ -134,18 +133,18 @@
     }
 
      .page-header__image {
-       width: auto;
+       width: 768px;
        height: 518px;
        background-image: url('../img/bg-back-tablet@1x.jpg');
-       background-size: auto 518px;
-      }
+       background-size: 768px 518px;
+     }
 
-      @media (min-resolution: 144dpi),
-             (min-resolution: 1.5dppx) {
-        .page-header__image {
-         background-image: url('../img/bg-back-tablet@2x.jpg');
-         background-size: auto 517px;
-        }
+     @media (min-resolution: 144dpi),
+            (min-resolution: 1.5dppx) {
+       .page-header__image {
+        background-image: url('../img/bg-back-tablet@2x.jpg');
+        background-size: 768px 517px;
+       }
      }
 
     .page-header__image--mob {
@@ -200,16 +199,16 @@
        width: 1200px;
        height: 518px;
        background-image: url('../img/bg-back-desktop@1x.jpg');
-       background-size: auto 517px;
+       background-size: 1200px 517px;
       }
 
       @media (min-resolution: 144dpi),
              (min-resolution: 1.5dppx) {
         .page-header__image {
          background-image: url('../img/bg-back-desktop@2x.jpg');
-         background-size: auto 517px;
+         background-size: 1200px 517px;
         }
-     }
+    }
 
      .page-header__welcome-title {
        width: 60%;
@@ -224,9 +223,12 @@
        background-size: 1200px auto;
       }
 
-      @media (min-resolution: 1.5dppx) {
-       background-image: url('../img/bg-back-desktop@2x.jpg');
-       background-size: 1200px auto;
+      @media (min-resolution: 144dpi),
+             (min-resolution: 1.5dppx) {
+        .page-header__image--mob {
+           background-image: url('../img/bg-back-desktop@2x.jpg');
+           background-size: 1200px auto;
+       }
       }
 
      .page-header__sedona {
@@ -240,5 +242,5 @@
        background-repeat: no-repeat;
        background-image: url('../img/bg-intro-triangle-desktop.svg');
      }
-  }
+   }
 }
