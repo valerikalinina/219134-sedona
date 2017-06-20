@@ -35,7 +35,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 648px) {
   .social {
     margin-top: 35px;
     margin: 35px auto auto 114px;
@@ -45,8 +45,10 @@
 @media screen and (min-width: 1200px) {
   .social {
    margin: 0 auto;
+   margin-left: 257px;
     &--form {
     margin-left: 255px;
   }
+
   }
 }

@@ -15,7 +15,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 648px) {
   .post {
     position: absolute;
     top: -6px;
@@ -39,10 +39,14 @@
     position: absolute;
     top: -86px;
     color: white;
-    padding: 16px 21px;
+    padding: 15px 21px;
     max-height: 80px;
     position: relative;
     background-color: rgba(0, 0, 0, 0.3);
+
+    &:first-child {
+      padding: 10px 21px 20px;
+    }
 
     &--grey {
       background-color: rgba(0, 0, 0, 0.3);

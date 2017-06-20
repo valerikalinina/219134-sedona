@@ -23,6 +23,11 @@
   margin-bottom: 49px;
 }
 
+.btn__reservation--disabled {
+  background-color: #e5e5e5;
+  color: white;
+}
+
 .btn__form {
   width: 280px;
   padding: 16px 49px 18px 46px;
@@ -30,7 +35,19 @@
   margin: 0 20px;
 }
 
-@media screen and (min-width: 768px) {
+.btn__modal-content {
+  width: 280px;
+  height: 58px;
+  outline: none;
+  border: none;
+}
+
+.btn__link-form {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 648px) {
   .btn__reservation {
     padding: 16px 135px;
     margin-bottom: 59px;
@@ -53,6 +70,17 @@
     text-transform: uppercase;
     color: black;
     font-weight: 300;
+  }
+
+  .btn__modal-content {
+   &--tablet {
+      width: 458px;
+    }
+
+    &--tablet-error {
+      width: 270px;
+      min-width: 270px;
+    }
   }
 }
 

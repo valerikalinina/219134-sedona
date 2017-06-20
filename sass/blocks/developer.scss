@@ -22,12 +22,18 @@
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 648px) {
   .developer {
     margin-top: 0px;
 
     &--form {
       margin-top: 10px;
+    }
+
+    .developer__text {
+      &--tablet {
+        margin-top: -8px;
+      }
     }
   }
 }

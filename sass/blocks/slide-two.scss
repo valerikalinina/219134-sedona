@@ -17,29 +17,19 @@
   position: relative;
   width: 266px;
   max-width: 266px;
+  height: 191px;
   margin: 0 auto;
-}
-
-.slide-two__describtion::before {
-  position: absolute;
-  top: -10px;
-  left: -27px;
-  content: '';
-  width: 320px;
-  height: 36px;
-  z-index: 3;
-  background-image: url('../img/bg-triangle.svg');
-  background-position: center;
 }
 
 .slide-two__title {
   text-align: center;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 21px;
   font-weight: 600;
   width: 266px;
   max-width: 260px;
-  margin-top: 56px;
+  margin-top: 47px;
+  margin-bottom: 13px;
   text-transform: uppercase;
 }
 
@@ -66,25 +56,24 @@
 
 .slide-two__image {
   position: relative;
-  width: auto;
+  width: 100%;
   height: 260px;
   z-index: 2;
-}
-
-.slide-two__image:after {
-  position: absolute;
-  content: '';
-  top: 0px;
-  left: -160px;
-  width: 320px;
-  height: 260px;
+  background-color: #e4b4a2;
   background-image: url('../img/photo-bridge-mobile@1x.jpg');
   background-position: center;
+  background-size: auto;
 }
 
+@media (min-resolution: 1.5dppx) {
+  .slide-first__image {
+    background-image: url('../img/photo-bridge-mobile@2x.jpg');
+    background-size: 320px auto;
+  }
+}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 648px) {
   .slide-two {
     flex-direction: row;
     justify-content: flex-start;
@@ -101,27 +90,30 @@
       order: 2;
     }
 
-    .slide-two__describtion::before {
-      display: none;
-    }
 
     .slide-two__image {
       width: 512px;
       max-width: 512px;
       height: 256px;
       order: 1;
+      background-image: url('../img/photo-bridge-tablet@1x.jpg');
+      background-size: 512px auto;
     }
 
-    .slide-two__image:after {
-      left: 0px;
-      width: 512px;
-      height: 256px;
+    @media (min-resolution: 1.5dppx) {
+      .slide-first__image {
+        background-image: url('../img/photo-bridge-tablet@2x.jpg');
+        background-size: 512px auto;
+      }
     }
 
     .slide-two__title {
-      max-width: 152px;
-      width: 152px;
+      max-width: 151px;
+      width: 151px;
       margin-top: 35px;
+      font-size: 21px;
+      line-height: 21px;
+      text-align: center;
     }
 
     .slide-two__number {
@@ -138,24 +130,39 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .slide-two {
     width: 1200px;
     max-width: 1200px;
 
+    .slide-two__title {
+      width: 151px;
+      max-width: 151px;
+      text-align: center;
+    }
+
     .slide-two__describtion {
       width: 400px;
-      max-width: 400px;
+      min-width: 400px;
     }
 
     .slide-two__text {
-      width: 270px;
-      max-width: 270px;
+      width: 215px;
+      max-width: 215px;
     }
 
     .slide-two__image {
       width: 800px;
       min-width: 800px;
+      background-image: url('../img/photo-bridge@1x.jpg');
+      background-size: 800px auto;
+    }
+
+    @media (min-resolution: 1.5dppx) {
+      .slide-first__image {
+        background-image: url('../img/photo-bridge@2x.jpg');
+        background-size: 800px auto;
+      }
     }
   }
 }

@@ -8,6 +8,10 @@
   height: 225px;
   margin: 0 auto;
 
+  &--index {
+    height: 220px;
+  }
+
   .describtion__title {
     text-align: center;
     font-size: 18px;
@@ -24,6 +28,10 @@
     font-weight: 300;
     margin-bottom: 33px;
     text-transform: uppercase;
+
+    &--index {
+      margin-bottom: 33px;
+    }
   }
 }
 
@@ -39,7 +47,7 @@
   background-size: contain;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 648px) {
   .describtion {
     width: auto;
     max-width: auto;
@@ -63,7 +71,7 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .describtion {
     background-color: white;
     .describtion__text::after {
