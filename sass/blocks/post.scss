@@ -1,5 +1,4 @@
 .post {
-
   .post__title {
     font-size: 14px;
     line-height: 24px;
@@ -14,7 +13,6 @@
     font-weight: 300;
   }
 }
-
 @media screen and (min-width: 648px) {
   .post {
     position: absolute;
@@ -29,12 +27,11 @@
     }
 
     .post__title {
-      margin-top: 0px;
+      margin-top: 0;
     }
   }
 }
-
-@media screen and (min-width: 1200px)  {
+@media screen and (min-width: 1200px) {
   .post {
     position: absolute;
     top: -86px;

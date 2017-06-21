@@ -19,12 +19,10 @@
     margin-right: 12px;
     text-transform: uppercase;
   }
-
 }
-
 @media screen and (min-width: 648px) {
   .developer {
-    margin-top: 0px;
+    margin-top: 0;
 
     &--form {
       margin-top: 10px;

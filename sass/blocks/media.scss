@@ -37,7 +37,8 @@
 
 .media__replay {
   fill: #5c6870;
-  margin: 22px 130px 0px 24px;
+  margin: 22px 130px 0 24px;
+
   &:hover {
     fill: #333333;
   }
@@ -49,6 +50,7 @@
 
 .media__fullscreen {
   fill: #5c6870;
+
   &:hover {
     fill: #333333;
   }
@@ -61,6 +63,7 @@
 .media__subtitles {
   fill: #5c6870;
   margin-right: 28px;
+
   &:hover {
     fill: #333333;
   }
@@ -69,12 +72,10 @@
     fill: #c1c1c1;
   }
 }
-
-
 @media screen and (min-width: 648px) {
   .media {
     top: 407px;
-    left: 0px;
+    left: 0;
     width: 648px;
     height: 93px;
 
@@ -96,16 +97,16 @@
     background-color: transparent;
 
     .media__replay {
-     margin-right: 470px;
-     fill: #ffffff;
+      margin-right: 470px;
+      fill: #ffffff;
 
-     &:hover {
-       fill: #333333;
-     }
+      &:hover {
+        fill: #333333;
+      }
 
-     &:active {
-       fill: #c1c1c1;
-     }
+      &:active {
+        fill: #c1c1c1;
+      }
     }
 
     .media__fullscreen {
@@ -133,7 +134,6 @@
     }
   }
 }
-
 @media screen and (min-width: 1200px) {
   .media {
     width: 800px;
@@ -147,8 +147,7 @@
     width: 800px;
 
     .media__replay {
-     margin-right: 620px;
-
+      margin-right: 620px;
     }
   }
 }

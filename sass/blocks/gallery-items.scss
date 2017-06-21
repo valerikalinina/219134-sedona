@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-
 @media screen and (min-width: 648px) {
   .gallery-items {
     width: 768px;
@@ -14,7 +13,6 @@
     flex-wrap: wrap;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .gallery-items {
     width: 1200px;
