@@ -85,12 +85,22 @@ gulp.task('copy', function() {
       'img/**',
       'js/**',
       '*.html'
+<<<<<<< HEAD
     ], {
       base: '.'
     })
     .pipe(gulp.dest('build'));
 });
 
+=======
+], {
+base: '.' })
+    .pipe(gulp.dest('build'));
+});
+
+
+var del = require('del');
+>>>>>>> master
 gulp.task('clean', function() {
   return del('build');
 });
