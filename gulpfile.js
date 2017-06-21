@@ -1,5 +1,3 @@
-'use strict';
-
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
@@ -90,14 +88,6 @@ return gulp.src([
   })
   .pipe(gulp.dest('build'));
 });
-
-
-], {
-  base: '.'
-})
-.pipe(gulp.dest('build'));
-});
-
 
 var del = require('del');
 gulp.task('clean', function() {
