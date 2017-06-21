@@ -46,7 +46,6 @@
   color: white;
   text-decoration: none;
 }
-
 @media screen and (min-width: 648px) {
   .btn__reservation {
     padding: 16px 135px;
@@ -57,7 +56,7 @@
     position: relative;
     width: 324px;
     padding: 16px 76px 18px 60px;
-    margin: 0px 0px 32px 0px;
+    margin: 0 0 32px;
   }
 
   .btn__form::after {
@@ -73,7 +72,7 @@
   }
 
   .btn__modal-content {
-   &--tablet {
+    &--tablet {
       width: 458px;
     }
 
@@ -83,7 +82,6 @@
     }
   }
 }
-
 @media screen and (min-width: 1200px) {
   .btn__reservation {
     margin-bottom: 65px;
