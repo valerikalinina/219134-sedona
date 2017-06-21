@@ -42,6 +42,7 @@
 
   &--name {
     width: 82%;
+
     &:hover {
       background-color: #e5e5e5;
     }
@@ -60,6 +61,7 @@
     padding: 16px 22px;
     width: 84%;
     max-height: 58px;
+
     &:hover {
       background-color: #e5e5e5;
     }
@@ -79,6 +81,7 @@
     width: 84%;
     max-height: 58px;
     margin-bottom: 2px;
+
     &:hover {
       background-color: #e5e5e5;
     }
@@ -91,11 +94,11 @@
   }
 }
 
-input[placeholder='Петр'],
-input[placeholder='Иванов'],
 input[placeholder='Александрович'],
-input[placeholder='Введите телефон'],
 input[placeholder='Введите e-mail'],
+input[placeholder='Введите телефон'],
+input[placeholder='Иванов'],
+input[placeholder='Петр'],
 textarea[placeholder='Опишите подробно все свои восторги'] {
   color: #000;
   font-size: 18px;
@@ -103,35 +106,34 @@ textarea[placeholder='Опишите подробно все свои восто
   font-weight: 600;
   font-family: 'TP sans';
 }
-
 @media screen and (min-width: 648px) {
- .field {
-   width: 137px;
-   &--area {
-     width: 604px;
-     max-width: 604px;
-     margin-bottom: 58px;
-   }
+  .field {
+    width: 137px;
 
-   &--number {
-     width: 546px;
-   }
+    &--area {
+      width: 604px;
+      max-width: 604px;
+      margin-bottom: 58px;
+    }
 
-   &--email {
-     width: 546px;
-   }
+    &--number {
+      width: 546px;
+    }
 
-     &--name {
-       width: 175px;
-     }
- }
+    &--email {
+      width: 546px;
+    }
 
+    &--name {
+      width: 175px;
+    }
+  }
 }
-
 @media screen and (min-width: 1200px) {
   .field {
     width: 268px;
     margin-left: 2px;
+
     &--area {
       min-width: 920px;
     }

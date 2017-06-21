@@ -40,7 +40,7 @@
     border: 3px solid #231f20;
     border-top-style: none;
     border-right-style: none;
-     transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
 
   .checkbox__input:checked + span::after {
@@ -59,10 +59,8 @@
     opacity: 0.3;
   }
 }
-
 @media screen and (min-width: 648px) {
   .checkbox {
-   padding-bottom: 62px;
-
+    padding-bottom: 62px;
   }
 }
