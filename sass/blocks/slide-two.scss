@@ -153,7 +153,7 @@
       background-image: url('../img/photo-bridge@1x.jpg');
       background-size: 800px auto;
     }
-    @media (min-resolution: 1.5dppx) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .slide-first__image {
         background-image: url('../img/photo-bridge@2x.jpg');
         background-size: 800px auto;
