@@ -1,3 +1,6 @@
+
+"use strict";
+
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var plumber = require('gulp-plumber');
@@ -14,8 +17,8 @@ var server = require('browser-sync').create();
 var run = require('run-sequence');
 var del = require('del');
 
-gulp.task('style', function() {
-  gulp.src('sass/style.scss')
+gulp.task("style", function() {
+  gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
     .pipe(postcss([
@@ -28,11 +31,8 @@ gulp.task('style', function() {
         sort: true
       })
     ]))
-    .pipe(gulp.dest('build/css'))
-    .pipe(server.stream())
-    .pipe(minify())
-    .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest("css"))
+    .pipe(server.stream());
 });
 
 gulp.task('images', function() {
@@ -59,8 +59,9 @@ gulp.task('svg', function() {
 });
 
 gulp.task('serve', ['style'], function() {
+
   server.init({
-    server: '.',
+    server: ".",
     notify: false,
     open: true,
     cors: true,
