@@ -80,27 +80,26 @@ gulp.task('serve', ['style'], function() {
 });
 
 gulp.task('copy', function() {
-  return gulp.src([
-      'fonts/**/*.{woff,woff2}',
-      'img/**',
-      'js/**',
-      '*.html'
-<<<<<<< HEAD
-    ], {
-      base: '.'
-    })
-    .pipe(gulp.dest('build'));
+return gulp.src([
+    'fonts/**/*.{woff,woff2}',
+    'img/**',
+    'js/**',
+    '*.html'
+  ], {
+    base: '.'
+  })
+  .pipe(gulp.dest('build'));
 });
 
-=======
+
 ], {
-base: '.' })
-    .pipe(gulp.dest('build'));
+  base: '.'
+})
+.pipe(gulp.dest('build'));
 });
 
 
 var del = require('del');
->>>>>>> master
 gulp.task('clean', function() {
   return del('build');
 });
