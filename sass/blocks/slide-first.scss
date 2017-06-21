@@ -106,6 +106,7 @@
       background-image: url('../img/photo-city-tablet@1x.jpg');
       background-size: auto;
     }
+
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       .slide-first__image {
         background-image: url('../img/photo-city-tablet@2x.jpg');
