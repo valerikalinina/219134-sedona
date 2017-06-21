@@ -25,7 +25,6 @@
     }
   }
 }
-
 @media screen and (min-width: 648px) {
   .page-footer {
     flex-direction: row;
@@ -37,14 +36,13 @@
     }
 
     .page-footer__teg {
-      margin: 45px 0px auto;
+      margin: 45px 0 auto;
     }
   }
 }
-
 @media screen and (min-width: 1200px) {
   .page-footer {
-    margin: 0px;
+    margin: 0;
     padding: 0 44px;
 
     .page-footer__teg {

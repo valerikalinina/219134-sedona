@@ -1,3 +1,5 @@
+'use-strict'
+
 var close = document.querySelector('.button-close');
 var open = document.querySelector('.button-open');
 var subMenu = document.querySelector('.main-nav');
@@ -12,24 +14,24 @@ var userNumber = document.querySelector('#user-telephone');
 var userMail = document.querySelector('#user-mail');
 //mobile-menu
 
-open.addEventListener('click', function (event) {
+open.addEventListener('click', function(event) {
   if (subMenu.classList.contains('main-nav--open-js')) {
-  event.preventDefault();
-  subMenu.classList.remove('main-nav--open-js');
-  subMenu.classList.add('main-nav--close');
-} else {
-  subMenu.classList.remove('main-nav--close-js');
-  subMenu.classList.add('main-nav--open-js');
+    event.preventDefault();
+    subMenu.classList.remove('main-nav--open-js');
+    subMenu.classList.add('main-nav--close');
+  } else {
+    subMenu.classList.remove('main-nav--close-js');
+    subMenu.classList.add('main-nav--open-js');
   }
 });
 
 
-close.addEventListener('click', function (event) {
+close.addEventListener('click', function(event) {
   if (subMenu.classList.contains('main-nav--open-js')) {
-  event.preventDefault();
-  subMenu.classList.remove('main-nav--open-js');
-  subMenu.classList.add('main-nav--close-js');
-}
+    event.preventDefault();
+    subMenu.classList.remove('main-nav--open-js');
+    subMenu.classList.add('main-nav--close-js');
+  }
 });
 
 // form
@@ -43,28 +45,29 @@ function closePopup(event) {
 };
 
 form.addEventListener('submit', function(event) {
-      if (!userName.value || !userSurname.value || !userNametwo.value || !userMail.value || !userNumber.value) {          event.preventDefault();
-           popup.classList.remove('modal-content--js');
-           popup.classList.add('modalcontent--error');
-         } else {
-           localStorage.setItem('feedback-userName', userName.value);
-           localStorage.setItem('feedback-userMail', userMail.value);
-         }
-      });
-
-btnForm.addEventListener('click', function (event) {
+  if (!userName.value || !userSurname.value || !userNametwo.value || !userMail.value || !userNumber.value) {
     event.preventDefault();
-    overlay.classList.remove('overlay');
-    overlay.classList.add('overlay--js');
     popup.classList.remove('modal-content--js');
-    popup.classList.add('modal-content');
+    popup.classList.add('modalcontent--error');
+  } else {
+    localStorage.setItem('feedback-userName', userName.value);
+    localStorage.setItem('feedback-userMail', userMail.value);
+  }
 });
 
-window.addEventListener('keydown', function (event) {
+btnForm.addEventListener('click', function(event) {
+  event.preventDefault();
+  overlay.classList.remove('overlay');
+  overlay.classList.add('overlay--js');
+  popup.classList.remove('modal-content--js');
+  popup.classList.add('modal-content');
+});
+
+window.addEventListener('keydown', function(event) {
   if (event.keyCode === 27) {
     closePopup();
   }
 });
-overlay.addEventListener('click', function (event) {
+overlay.addEventListener('click', function(event) {
   closePopup();
 });

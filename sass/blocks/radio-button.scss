@@ -8,6 +8,7 @@
   .radio-button__input {
     display: none;
   }
+
   .radio-button__text {
     position: relative;
     font-size: 18px;
@@ -55,13 +56,11 @@
     opacity: 0.3;
   }
 }
-
 @media screen and (min-width: 648px) {
   .radio-button {
     padding-bottom: 53px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .radio-button {
     .radio-button__text {

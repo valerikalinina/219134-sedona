@@ -10,55 +10,53 @@
   border-bottom: 1px solid #d6d6d6;
 
   &--last {
-  border-bottom: none;
+    border-bottom: none;
+  }
+
+  .property-item__title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+    width: 247px;
+    max-width: 260px;
+    margin-top: 45px;
+    text-transform: uppercase;
+  }
+
+  .property-item__number {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    width: 247px;
+    max-width: 266px;
+    text-transform: uppercase;
+  }
+
+  .property-item__describtion {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    width: 247px;
+    max-width: 260px;
+    margin-bottom: 45px;
+    text-transform: uppercase;
+  }
 }
-
-.property-item__title {
-  text-align: center;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 600;
-  width: 247px;
-  max-width: 260px;
-  margin-top: 45px;
-  text-transform: uppercase;
-}
-
-.property-item__number {
-  text-align: center;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 300;
-  width: 247px;
-  max-width: 266px;
-  text-transform: uppercase;
-}
-
-.property-item__describtion {
-  text-align: center;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 300;
-  width: 247px;
-  max-width: 260px;
-  margin-bottom: 45px;
-  text-transform: uppercase;
- }
-
-}
-
 @media screen and (min-width: 648px) {
   .property-item {
     width: 256px;
     height: 256px;
     border-bottom: none;
-    padding: 0px 50px 0;
+    padding: 0 50px;
 
     .property-item__title {
       width: 118px;
       max-width: 118px;
       font-size: 21px;
-      margin-top: 0px;
+      margin-top: 0;
       line-height: 26px;
       margin-top: -20px;
       margin-bottom: 15px;
@@ -84,7 +82,6 @@
     }
   }
 }
-
 @media screen and (min-width: 1200px) {
   .property-item {
     width: 400px;
@@ -102,8 +99,7 @@
       width: 264px;
       max-width: 264px;
       min-width: 264px;
-      margin: 0 auto;
-      margin-bottom: 20px;
+      margin: 0 auto 20px;
 
       &--desktop {
         width: 293px;
