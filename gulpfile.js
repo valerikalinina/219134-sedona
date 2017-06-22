@@ -68,12 +68,6 @@ gulp.task('serve', ['style'], function() {
     ui: false
   });
 
-  gulp.task('sass', function() {
-    gulp.src('sass/style.scss')
-      .pipe(sass())
-      .pope(gulp.dest('css'));
-  })
-
   gulp.watch('sass/**/*.{scss,sass}', ['style']);
   gulp.watch('*.html').on('change', server.reload);
 });
