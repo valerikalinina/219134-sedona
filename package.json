@@ -5,7 +5,8 @@
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies":
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "^6.7.7",
+    "autoprefixe
+    r": "^6.7.7",
     "browser-sync": "^2.18.12",
     "css-mqpacker": "^6.0.1",
     "del": "^3.0.0",
