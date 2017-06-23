@@ -1,5 +1,4 @@
 {
-
   "name": "sedona",
   "version": "0.1.0",
   "private": true,
@@ -22,7 +21,6 @@
     "gulp-svgstore": "^6.1.0",
     "run-sequence": "^1.2.2"
   },
-
   "scripts": {
     "test": "editorconfig-cli",
     "build": "gulp build",
