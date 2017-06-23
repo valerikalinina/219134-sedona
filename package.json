@@ -19,12 +19,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-svgmin": "^1.2.4",
     "gulp-svgstore": "^6.1.0",
-  },
-
-  "scripts": {
-    "test": "editorconfig-cli",
-    "build": "gulp build",
-    "start": "npm run build && gulp serve"
+    "run-sequence": "^1.2.2"
   },
   "editorconfig-cli": [
     "*.html",
@@ -41,3 +36,9 @@
     "normalize-scss": "^7.0.0"
   }
 }
+
+  "scripts": {
+    "test": "editorconfig-cli",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
