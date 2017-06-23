@@ -1,12 +1,11 @@
 {
-  "name": "sedona",
+
   "version": "0.1.0",
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
-  "devDependencies":
+  "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixe
-    r": "^6.7.7",
+    "autoprefixer": "^6.7.7",
     "browser-sync": "^2.18.12",
     "css-mqpacker": "^6.0.1",
     "del": "^3.0.0",
@@ -22,6 +21,7 @@
     "gulp-svgstore": "^6.1.0",
     "run-sequence": "^1.2.2"
   },
+
   "scripts": {
     "test": "editorconfig-cli",
     "build": "gulp build",
