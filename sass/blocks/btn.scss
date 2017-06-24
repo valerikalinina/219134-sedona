@@ -29,10 +29,13 @@
 }
 
 .btn__form {
-  width: 280px;
+  max-width: 185px;
   padding: 16px 49px 18px 46px;
   max-height: 58px;
   margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
 }
 
 .btn__modal-content {
@@ -42,10 +45,6 @@
   border: none;
 }
 
-.btn__link-form {
-  color: white;
-  text-decoration: none;
-}
 @media screen and (min-width: 648px) {
   .btn__reservation {
     padding: 16px 135px;
@@ -54,7 +53,7 @@
 
   .btn__form {
     position: relative;
-    width: 324px;
+    width: 330px;
     padding: 16px 76px 18px 60px;
     margin: 0 0 32px;
   }
