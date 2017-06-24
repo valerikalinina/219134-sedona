@@ -1,0 +1,16 @@
+.property-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+  color: black;
+  height: auto;
+  background-color: #eee;
+}
+@media screen and (min-width: 648px) {
+  .property-items {
+    flex-direction: row;
+  }
+}

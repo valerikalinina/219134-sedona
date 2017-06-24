@@ -1,0 +1,50 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  width: 151px;
+  height: auto;
+  margin: 0 auto;
+
+  .social-icon {
+    display: flex;
+    position: relative;
+    width: 46px;
+    height: 48px;
+    background-color: rgba(129, 179, 210, 1);
+    margin-right: 6px;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+    }
+
+    &:active .social-icon--center {
+      fill: rgba(136, 182, 209, 0.3);
+    }
+  }
+
+  .social-icon:last-of-type {
+    margin-right: 0;
+  }
+
+  .social-icon a {
+    margin: auto;
+  }
+}
+@media screen and (min-width: 648px) {
+  .social {
+    margin: 35px auto auto 114px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social {
+    margin: 0 auto 0 257px;
+
+    &--form {
+      margin-left: 255px;
+    }
+  }
+}
