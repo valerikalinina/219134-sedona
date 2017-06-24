@@ -18,6 +18,10 @@
     line-height: 26px;
     margin-right: 12px;
     text-transform: uppercase;
+
+    &--form-mob {
+      margin-top: -9px;
+    }
   }
 }
 @media screen and (min-width: 648px) {

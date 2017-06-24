@@ -29,10 +29,13 @@
 }
 
 .btn__form {
-  width: 280px;
+  max-width: 184px;
   padding: 16px 49px 18px 46px;
   max-height: 58px;
   margin: 0 20px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
 }
 
 .btn__modal-content {
@@ -42,10 +45,6 @@
   border: none;
 }
 
-.btn__link-form {
-  color: white;
-  text-decoration: none;
-}
 @media screen and (min-width: 648px) {
   .btn__reservation {
     padding: 16px 135px;
@@ -54,15 +53,15 @@
 
   .btn__form {
     position: relative;
-    width: 324px;
-    padding: 16px 76px 18px 60px;
+    width: 330px;
+    padding: 16px 77px 18px 62px;
     margin: 0 0 32px;
   }
 
   .btn__form::after {
     position: absolute;
     top: 19px;
-    right: -325px;
+    right: -327px;
     content: '* - Обязательные поля';
     font-size: 14px;
     line-height: 26px;
@@ -88,8 +87,8 @@
   }
 
   .btn__form {
-    width: 480px;
-    padding: 16px 146px 18px;
+    width: 192px;
+    padding: 16px 149px 18px 146px;
   }
 
   .btn__form::after {
