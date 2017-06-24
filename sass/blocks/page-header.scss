@@ -13,10 +13,10 @@
   }
 
   .page-header__logo {
+    width: 101px;
     position: absolute;
     top: 0;
     left: 110px;
-    width: 101px;
 
     &--tablet {
       display: none;
@@ -31,13 +31,6 @@
     }
   }
 
-  .page-header__logo-link {
-    position: absolute;
-    top: 0;
-    height: 100px;
-    z-index: 100;
-  }
-
   button {
     position: absolute;
     top: 17px;
@@ -48,6 +41,13 @@
     outline: none;
     background: none;
     cursor: pointer;
+  }
+
+  .page-header__logo-link {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    z-index: 100;
   }
 
   .page-header__open {
@@ -185,8 +185,8 @@
       }
 
       &--desktop {
-        width: 200px;
         display: block;
+        width: 200px;
       }
     }
 
