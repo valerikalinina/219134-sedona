@@ -29,7 +29,7 @@
 }
 
 .btn__form {
-  max-width: 280px;
+  max-width: 184px;
   padding: 16px 49px 18px 46px;
   max-height: 58px;
   margin: 0 20px;
@@ -54,14 +54,14 @@
   .btn__form {
     position: relative;
     width: 330px;
-    padding: 16px 76px 18px 60px;
+    padding: 16px 77px 18px 62px;
     margin: 0 0 32px;
   }
 
   .btn__form::after {
     position: absolute;
     top: 19px;
-    right: -324px;
+    right: -327px;
     content: '* - Обязательные поля';
     font-size: 14px;
     line-height: 26px;
@@ -87,8 +87,8 @@
   }
 
   .btn__form {
-    width: 480px;
-    padding: 16px 146px 18px;
+    width: 192px;
+    padding: 16px 149px 18px 146px;
   }
 
   .btn__form::after {
