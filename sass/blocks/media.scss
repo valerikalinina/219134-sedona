@@ -1,0 +1,153 @@
+.media {
+  position: absolute;
+  top: 156px;
+  left: 20px;
+  width: 280px;
+  height: 45px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .media__line {
+    position: relative;
+    margin: 22px;
+    width: 235px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .media__toggle {
+    position: absolute;
+    top: -3px;
+    left: 36px;
+    width: 9px;
+    height: 9px;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+.media___media-pleyer {
+  position: absolute;
+  top: 201px;
+  left: 20px;
+  width: 280px;
+  height: 66px;
+  background-color: #f2f2f2;
+}
+
+.media__replay {
+  fill: #5c6870;
+  margin: 22px 130px 0 24px;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #c1c1c1;
+  }
+}
+
+.media__fullscreen {
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #c1c1c1;
+  }
+}
+
+.media__subtitles {
+  fill: #5c6870;
+  margin-right: 28px;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #c1c1c1;
+  }
+}
+@media screen and (min-width: 648px) {
+  .media {
+    top: 407px;
+    left: 0;
+    width: 648px;
+    height: 93px;
+
+    .media__line {
+      width: 390px;
+      margin-top: 44px;
+      margin-left: 93px;
+    }
+
+    .media__toggle {
+      left: 113px;
+    }
+  }
+
+  .media___media-pleyer {
+    width: 678px;
+    top: 420px;
+    left: 10px;
+    background-color: transparent;
+
+    .media__replay {
+      margin-right: 470px;
+      fill: #ffffff;
+
+      &:hover {
+        fill: #333333;
+      }
+
+      &:active {
+        fill: #c1c1c1;
+      }
+    }
+
+    .media__fullscreen {
+      fill: #ffffff;
+
+      &:hover {
+        fill: #333333;
+      }
+
+      &:active {
+        fill: #c1c1c1;
+      }
+    }
+
+    .media__subtitles {
+      fill: #ffffff;
+
+      &:hover {
+        fill: #333333;
+      }
+
+      &:active {
+        fill: #c1c1c1;
+      }
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .media {
+    width: 800px;
+
+    .media__line {
+      width: 540px;
+    }
+  }
+
+  .media___media-pleyer {
+    width: 800px;
+
+    .media__replay {
+      margin-right: 620px;
+    }
+  }
+}

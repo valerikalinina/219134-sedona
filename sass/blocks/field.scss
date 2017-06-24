@@ -1,0 +1,158 @@
+.field {
+  background-color: #f2f2f2;
+  border: none;
+  outline: none;
+  padding: 16px 22px;
+  width: 79%;
+  max-height: 58px;
+  color: black;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: 'PT sans', sans-serif, 'Arial';
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    padding: 12px 18px;
+    background-color: white;
+    border: 4px solid #e5e5e5;
+  }
+
+  &--area {
+    max-width: 240px;
+    min-width: 240px;
+    min-height: 116px;
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    padding: 16px 20px 28px;
+    margin-bottom: 34px;
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      padding: 12px 16px 24px;
+      background-color: white;
+      border: 4px solid #e5e5e5;
+    }
+  }
+
+  &--mob {
+    margin-bottom: 50px;
+  }
+
+  &--name {
+    width: 82%;
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      padding: 12px 18px;
+      background-color: white;
+      border: 4px solid #e5e5e5;
+    }
+  }
+
+  &--number {
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    padding: 16px 22px;
+    width: 84%;
+    max-height: 58px;
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      padding: 12px 18px;
+      background-color: white;
+      border: 4px solid #e5e5e5;
+    }
+  }
+
+  &--email {
+    background-color: #f2f2f2;
+    border: none;
+    outline: none;
+    padding: 16px 22px;
+    width: 84%;
+    max-height: 58px;
+    margin-bottom: 2px;
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      padding: 12px 18px;
+      background-color: white;
+      border: 4px solid #e5e5e5;
+    }
+  }
+}
+
+input[placeholder='Александрович'],
+input[placeholder='Введите e-mail'],
+input[placeholder='Введите телефон'],
+input[placeholder='Иванов'],
+input[placeholder='Петр'],
+textarea[placeholder='Опишите подробно все свои восторги'] {
+  color: #000;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  font-family: 'TP sans';
+}
+@media screen and (min-width: 648px) {
+  .field {
+    width: 137px;
+
+    &--area {
+      width: 604px;
+      max-width: 604px;
+      margin-bottom: 58px;
+    }
+
+    &--number {
+      width: 546px;
+    }
+
+    &--email {
+      width: 546px;
+    }
+
+    &--name {
+      width: 175px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .field {
+    width: 268px;
+    margin-left: 2px;
+
+    &--area {
+      min-width: 920px;
+    }
+
+    &--number {
+      width: 214px;
+    }
+
+    &--name {
+      width: 306px;
+    }
+
+    &--email {
+      width: 214px;
+    }
+  }
+}
