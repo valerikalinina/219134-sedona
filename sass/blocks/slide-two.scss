@@ -63,11 +63,11 @@
     background-image: url('../img/photo-bridge-mobile@1x.jpg');
     background-position: center;
     background-size: auto;
-  }
-  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .slide-first__image {
-      background-image: url('../img/photo-bridge-mobile@2x.jpg');
-      background-size: 320px auto;
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      .slide-first__image {
+        background-image: url('../img/photo-bridge-mobile@2x.jpg');
+        background-size: 320px auto;
+      }
     }
   }
 }
@@ -95,13 +95,13 @@
       order: 1;
       background-image: url('../img/photo-bridge-tablet@1x.jpg');
       background-size: 512px auto;
-    }
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .slide-first__image {
-        background-image: url('../img/photo-bridge-tablet@2x.jpg');
-        background-size: 512px auto;
-      }
-    }
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+       .slide-first__image {
+         background-image: url('../img/photo-bridge-tablet@2x.jpg');
+         background-size: 512px auto;
+       }
+     }
+   }
 
     .slide-two__title {
       max-width: 151px;
@@ -138,7 +138,7 @@
 
     .slide-two__describtion {
       width: 400px;
-      min-width: 400px;
+      max-width: 400px;
     }
 
     .slide-two__text {
@@ -151,11 +151,11 @@
       min-width: 800px;
       background-image: url('../img/photo-bridge@1x.jpg');
       background-size: 800px auto;
-    }
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      .slide-first__image {
-        background-image: url('../img/photo-bridge@2x.jpg');
-        background-size: 800px auto;
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        .slide-first__image {
+          background-image: url('../img/photo-bridge@2x.jpg');
+          background-size: 800px auto;
+        }
       }
     }
   }
