@@ -102,6 +102,7 @@
 
     .slide-first__image {
       width: 100%;
+      min-width: 512px;
       max-width: 512px;
       height: 256px;
       background-image: url('../img/photo-city-tablet@1x.jpg');
@@ -155,9 +156,9 @@
     .slide-first__image {
       width: 800px;
       min-width: 800px;
+      max-width: 800px;
       background-image: url('../img/photo-city@1x.jpg');
       background-size: 800px auto;
-
       @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
         .slide-first__image {
           background-image: url('../img/photo-city@2x.jpg');
